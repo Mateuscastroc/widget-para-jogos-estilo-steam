@@ -1,0 +1,126 @@
+<div id="mini-widget-game-embed">
+  <style>
+    /* ----- escopo para evitar conflitos no WP ----- */
+    #mini-widget-game-embed .mw-card {
+      display: flex;
+      background-color: #1b2838;
+      border-radius: 4px;
+      overflow: hidden;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      color: #c7d5e0;
+      font-family: Arial, sans-serif;
+      margin: 0 auto; /* centra dentro do container do post */
+    }
+
+    #mini-widget-game-embed .mw-img {
+      width: 160px;
+      min-width: 160px;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    #mini-widget-game-embed .mw-content {
+      padding: 10px;
+      flex: 1;
+    }
+
+    #mini-widget-game-embed .mw-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    #mini-widget-game-embed .mw-desc {
+      font-size: 13px;
+      margin-top: 6px;
+      color: #8f98a0;
+      line-height: 1.4;
+    }
+
+    #mini-widget-game-embed .mw-footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    #mini-widget-game-embed .mw-price {
+      background-color: #000;
+      padding: 4px 6px;
+      font-size: 14px;
+      color: #fff;
+      border-radius: 2px;
+    }
+
+    /* Botão como link, sem <a> dentro de <button> */
+    #mini-widget-game-embed .mw-btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 6px 10px;
+      font-size: 14px;
+      border-radius: 2px;
+      color: #fff;
+      transition: filter .15s ease;
+    }
+    #mini-widget-game-embed .mw-btn:hover,
+    #mini-widget-game-embed .mw-btn:focus {
+      filter: brightness(1.1);
+    }
+
+    /* variantes de “loja” (cores) – pode criar outras se quiser */
+    #mini-widget-game-embed .mw-btn.ps {
+      background-color: #08168d;
+    }
+    #mini-widget-game-embed .mw-btn.ps:hover {
+      background-color: #4a7eec;
+    }
+    #mini-widget-game-embed .mw-btn.sw {
+      background-color: #e20c04;
+    }
+    #mini-widget-game-embed .mw-btn.sw:hover {
+      background-color: #d63838;
+    }
+
+    /* responsividade: empilha em telas estreitas */
+    @media (max-width: 480px) {
+      #mini-widget-game-embed .mw-card {
+        flex-direction: column;
+      }
+      #mini-widget-game-embed .mw-img {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+
+  <div class="mw-card" role="group" aria-label="Widget de compra do jogo">
+    <img
+      class="mw-img"
+      loading="lazy"
+      src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch-2/70010000096809/7d96d2b6161401c27be0df3fe57ca2e06db1263c4323c566c9269eb270c75dc1"
+      alt="Capa do jogo Donkey Kong Bananza">
+    <div class="mw-content">
+      <div class="mw-title">Buy Donkey Kong Bananza</div>
+      <div class="mw-desc">
+        O grandalhão está de volta e ele não está sozinho!
+        Explore um vasto mundo subterrâneo com Donkey Kong e Pauline — na base da destruição!
+      </div>
+      <div class="mw-footer">
+        <span class="mw-price" aria-label="Preço">R$ 439,90</span>
+        <a
+          class="mw-btn sw"
+          href="https://www.nintendo.com/pt-br/store/products/donkey-kong-bananza-switch-2/?srsltid=AfmBOopUdw6W_jFtF31casKJ8WTLvhgQMHF48JcINo9W0FI5KGf0Mz8e"
+          target="_blank" rel="noopener noreferrer"
+          aria-label="Comprar agora">
+          Compre já
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
