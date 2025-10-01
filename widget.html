@@ -1,6 +1,6 @@
 <div id="mini-widget-game-embed">
   <style>
-    /* ----- escopo para evitar conflitos no WP ----- */
+    /* ----- evitar conflitar com WP ----- */
     #mini-widget-game-embed .mw-card {
       display: flex;
       background-color: #1b2838;
@@ -57,7 +57,6 @@
       border-radius: 2px;
     }
 
-    /* Botão como link, sem <a> dentro de <button> */
     #mini-widget-game-embed .mw-btn {
       display: inline-block;
       text-decoration: none;
@@ -72,7 +71,7 @@
       filter: brightness(1.1);
     }
 
-    /* variantes de “loja” (cores) – pode criar outras se quiser */
+    /* cor loja */
     #mini-widget-game-embed .mw-btn.ps {
       background-color: #08168d;
     }
@@ -85,8 +84,7 @@
     #mini-widget-game-embed .mw-btn.sw:hover {
       background-color: #d63838;
     }
-
-    /* responsividade: empilha em telas estreitas */
+    
     @media (max-width: 480px) {
       #mini-widget-game-embed .mw-card {
         flex-direction: column;
@@ -124,3 +122,4 @@
     </div>
   </div>
 </div>
+
